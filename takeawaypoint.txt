@@ -1,0 +1,85 @@
+********************************************	01/08	Day 1 ***************************************
+--All programming languages are software
+--James osling developed java in 1991.	
+--Java 1st version in 1996 JDK-1
+--Where to write java code ? 
+	Editor -> BlueJ, Doctor Java, Sublime Text
+	IDE -> Eclipse, Intellij, STS, Netbeans, VS code
+download from https://spring.io/tools
+
+compile java source code using javac <FileName>.java
+run the compiled source code of java <className>.class file via java <className>
+
+
+****************************************************** 01/09 Day 2 ***************************************
+
+Main method is for the execution purpose only NOT for compilation 	
+delimeters ----> {};(),
+keywords
+identifiers 
+public --> access everywhere
+protected --> class,same packages and child classes of different packages too.
+default ----> access in class and same packes only.
+private ----> access in class only.
+
+
+*************************************************** 01/10 Day 3 ***************************************************
+
+Data Type
+proper data representation
+proper memory allocation
+proper operation to be performed
+
+Types:
+	Primitive. :
+		byte,short,int,long,float,double,char,boolean.
+	Non-Primitive.
+		String,Array,Classes,Collection,Date,Enums,
+
+
+Primitive types and their wrapper class covered all
+		 *  byte 		Byte
+		 *  short 		Short
+		 *  int			Integer
+		 *  long		Long
+		 *  float		Float
+		 *  double		Double
+		 *  char		Character
+		 *  boolean		Boolean
+
+auto boxing
+		 *  int k = 343;
+		 *  Integer p = k; //auto-boxing ---> providing methods of wrapper to p using value of k
+
+auto unboxing
+			 *  Integer p = 3434;s
+			 *  int k = p // auto unboxing.
+
+ BigInteger
+ BigDecimal
+	BigInteger a= BigInteger.valueOf(Long.MAX_VALUE);
+		BigInteger b= BigInteger.valueOf(Long.MAX_VALUE);
+		BigInteger c = a.add(b);
+		System.out.println(c);
+
+
+
+
+***************************************************** 01/11 Day 4 ***********************************************************
+Package:
+	collection of related classes and interfaces.
+	other then java.lang package should be imported.
+	java.lang ----> default package.
+
+Type Casting: 
+	implicit casting  -------> Automatically casted by java compiler.
+	explicit casting --------> should be casted by user using syntax int a = (int) 12.234f; 
+Pre and post increment.
+			int a= 10;
+		System.out.println(a++);
+		System.out.println(a = a+5);
+		
+		System.out.println(++a);
+		System.out.println(++a + a++);
+		System.out.println(a);
+	
