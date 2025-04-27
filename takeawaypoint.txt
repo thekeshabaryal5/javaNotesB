@@ -14,7 +14,7 @@ run the compiled source code of java <className>.class file via java <className>
 ****************************************************** 01/09 Day 2 ***************************************
 
 Main method is for the execution purpose only NOT for compilation 	
-delimeters ----> {};(),
+delimeters ----> {,},;,(,), and so on.........
 keywords
 identifiers 
 public --> access everywhere
@@ -38,22 +38,22 @@ Types:
 
 
 Primitive types and their wrapper class covered all
-		 *  byte 		Byte
-		 *  short 		Short
-		 *  int			Integer
-		 *  long		Long
-		 *  float		Float
-		 *  double		Double
-		 *  char		Character
-		 *  boolean		Boolean
+		    byte 		Byte
+		    short 		Short
+		    int			Integer
+		    long		Long
+		    float		Float
+		    double		Double
+		    char		Character
+		    boolean		Boolean
 
 auto boxing
-		 *  int k = 343;
-		 *  Integer p = k; //auto-boxing ---> providing methods of wrapper to p using value of k
+		    int k = 343;
+		    Integer p = k; //auto-boxing ---> providing methods of wrapper to p using value of k
 
 auto unboxing
-			 *  Integer p = 3434;s
-			 *  int k = p // auto unboxing.
+			    Integer p = 3434;s
+			    int k = p // auto unboxing.
 
  BigInteger
  BigDecimal
@@ -61,7 +61,6 @@ auto unboxing
 		BigInteger b= BigInteger.valueOf(Long.MAX_VALUE);
 		BigInteger c = a.add(b);
 		System.out.println(c);
-
 
 
 
@@ -73,9 +72,21 @@ Package:
 
 Type Casting: 
 	implicit casting  -------> Automatically casted by java compiler.
-	explicit casting --------> should be casted by user using syntax int a = (int) 12.234f; 
-Pre and post increment.
-			int a= 10;
+		byte -> short -> int -> long -> float -> double
+
+	explicit casting --------> should be casted by user using syntax 
+		syntax:
+			data_type var = (data_type) value;
+
+		double -> float -> long -> int -> short -> byte -> char
+
+		explicit casting is required when we want to convert a data types with higher size to smaller size.
+		example: float number = 12.343f;
+				int myNumber = (int) number //myNumber = 12
+				int a = (int) 12.234f; 
+				
+Pre and post increment.  ++a and a++
+		int a= 10;
 		System.out.println(a++);
 		System.out.println(a = a+5);
 		
@@ -83,3 +94,195 @@ Pre and post increment.
 		System.out.println(++a + a++);
 		System.out.println(a);
 	
+Control Statement.
+		Use to implement conditions in program
+		
+		Types
+		1. Selection (Decision Making)
+			a.if
+				Syntax:
+					if(condition)
+					{
+						body to execute if condition evaluates true.
+					}
+			b.if-else
+			c.nested if else
+			d.else if (if-else ladder)
+			e.switch
+		
+		2. Looping(iteration)
+			a.for
+				a.1. forEach loop
+			b.while
+			c.do-while
+		3. Jumping (Branching)
+			a.break
+			b.continue;
+			c.return
+
+		 
+
+************************************************* 01/12 Day 5 ****************************************************
+
+if-else
+	# use to implement exactly two conditions.
+	# syntax:
+	if(condition)
+	{
+		//code to execute if the condition evaluates true
+	}
+	else
+	{
+		//code to execute if the condition evaluates to false
+	}
+
+Nested if-else
+	#syntax:
+		if(condition1)
+		{
+			if(condition2)
+			{ 
+				if(condition 3)
+				{
+					//code to execute if all conditions 1,2 and 3 are evaluated as true.
+				}
+				else
+				{
+					//code to execute if condition1 and condition2 are true but condition 3 is false
+				}
+			}
+			else
+			{
+				//code to execute if condition 1 is true but conditioon2 is false
+			}
+		}
+		else
+		{
+			//code to execute if condition1 is false.
+		} 
+
+
+if else ladder / else if
+	# syntax:
+		if(condition 1)
+			{
+			code to execute if condition1 evaluates to true
+			}
+		else if(condition 2)
+			{
+				code to execute if condition2 evaluates to true
+			}
+			else if(condition 3)
+			{
+				code to execute if condition3 evaluates to true.
+			}
+			......
+			else
+			{
+			code to execute of none of the condition evaluates to true.
+			}
+		
+Switch
+	#Syntax:  
+		switch(variable)
+		{
+			case 1:
+				// satements
+				break;
+			case 2:
+				//statements
+				break;
+		.
+		.
+		.
+		.
+		.
+		.
+			default:
+				//stmt
+				break;
+		}
+
+		Alternative syntax from java12 and above.....
+		datatype variableName = switch(vairable)
+		{
+			case 1 -> value1;
+			case 2 -> value2;
+			.
+			.
+			..
+			.
+			default -> value3; 
+		}
+		  
+   
+		    	
+
+****************************************************** 01/14 Day 6 ***************************************************************
+for loop
+	#syntax:
+		for(initialization;condition;updation)     // updation---> increment/decrement.
+		{
+				body
+		}
+
+forEach loop	
+	   #used to read data from collection (array, map,list,set etc)
+	   
+	   Syntax:
+	   for(dataType var:collection)
+	   {
+	    	body...
+	   }
+
+while loop
+ 	#syntax
+   			while(condition)
+   			{
+   				//statements
+   				updation (increment/decrement)
+   			}
+
+
+do while loop
+	Syntax:
+  		do
+		   {
+		    // statement
+		    updation..
+		    }while(condition);
+
+break
+	break the flow of loop / exit out of loop
+	syntax:
+		break;
+continue
+	skips the current iteration of loop and jumps to next iteration.
+	syntax:
+		loop;
+return
+	returns the control/flow of program to the function calling point/line.
+	syntax:
+		return;
+		return <value>;
+
+
+
+
+****************************************************** 01/15 Day 7 ***************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+																														Notes Maintained by:
+																														Keshab Aryal

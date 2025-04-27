@@ -1,0 +1,29 @@
+                            01/11 Day 4
+Q1 .WAP to print the are of rectangle where value of l and b not zero.  ✔
+
+*********************************************************************************
+                             01/12 Day 5
+Q1>  WAP to calculate total salary of following post :              ✔
+            
+            post         basic salary      bonus   total salary 
+            ---------     --------------    -------  --------------
+            MD                 230000         20%         ?
+            CEO                250000         25.79%      ?
+            MANAGER            176000         16 %        ?
+            HELPER             145900         9%          ?
+        ---------------------------------------------------
+        
+Q2> WAP to calculate +,-, ,/ of two int values using switch.    ✔ 
+            char op = sc.next().chatAt(0);
+			  
+*********************************************************************************
+
+                            01/14 Day 6
+1.WAP to check a given number is prime or not ✔
+2.WAP to print prime numbers between given range ✔
+3.WAP to count prime numbers between given range ✔
+4.WAP to reverse a given number  ✔
+5.WAP to find sum of digits of given number   ✔
+
+
+*********************************************************************************
