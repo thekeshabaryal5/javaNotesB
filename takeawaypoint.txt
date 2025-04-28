@@ -270,13 +270,45 @@ return
 
 
 ****************************************************** 01/15 Day 7 ***************************************************************
-
-
-
-
-
-
-
+Methods.
+	# use for code re-usability.
+	# lines or block of code used to perform specific task in the program.
+	# In Java, there are no stand alone functions. Every function must be associated with a class,
+	and therefore, they are referred to as methods. Java does not have "free functions" like in some other languages.
+	#Syntax:
+		returnType methodName(arg1,arg2,.....argn)
+		{
+			// statements..
+		}
+	# return_type:
+			a. void			:		no value(result) return from method. 
+			b. non-void		:		value(result) return from method.
+	
+	# types of function
+		1. no return type with no parameters.
+			eg: void sum()
+				{
+					//statements...
+				}
+		2. no return type with parameters.
+			 void printTable(int n)
+			{
+				System.out.println("Multiplication table of "+n+" :");
+				for(int i=1;i<=10;i++)
+				{
+					System.out.println(n+" X "+i+" = "+n*i);
+				}
+			}
+		3. return type with no parameters.
+			 int getSum1To100()
+			{
+				//code to find sum...
+			}
+		4 return type with parametrs.
+			 int findLargets(int a,int b, int c)
+			 {
+				// code to find the largetst one.....
+			 }
 
 
 
