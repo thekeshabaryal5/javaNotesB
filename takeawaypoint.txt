@@ -312,9 +312,36 @@ Methods.
 
 
 
+****************************************************** 01/16 Day 8 ***************************************************************
+Array           ------> Collection of homogeneous data.
+				------> Group of multiple values of same data type with fixed size.
+				Can contain duplicate data also.
+				Contagious memory allocation.
+				array is an object in java (implicitly)
+
+			#Syntax:
+					data_type  array_name[]  = new data_type[size]
+
+					  Or
+					data_type[] array_name = new data_type[size];
+
+					String[] cities = new String[100];
+					float [] height = new float[500000];
+					char  alphas[] = new char[26];
+					Dog dog[] = new Dog[200];
+
+
+	when to use array?
+		  	multiple values (greater than 3)
+		  	having same dataType
+		  	Fixed number of values
+	
 
 
 
 
+
+
+**********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal 
