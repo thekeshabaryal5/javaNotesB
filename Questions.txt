@@ -89,3 +89,6 @@ Q>  SI and Amount using following methods: ✔
 17. Write a Java program to find the second largest element in an array.
 18. Write a Java program to find the second smallest element in an array.
 19. Write a Java program to add two matrices of the same size.
+
+********************************************************* Day 9 01/17 ****************************************************************
+Solve using multidimensional array to store the data of students as given format in image aside .09_01_17.jpg ✔

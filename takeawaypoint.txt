@@ -337,6 +337,92 @@ Array           ------> Collection of homogeneous data.
 		  	Fixed number of values
 	
 
+**********************************************************01/17 Day 9 *****************************************************************
+Array with method
+	a. Array as argument :
+		void sum(int[] array)
+		{
+			//
+		}
+		here we are passing an array of integer in method sum.
+	b. Array as return type
+		int[] get20Numbers()
+		{
+			//array = 20,10,12,13,43....
+			return array;
+		}
+
+		// we are returning array of integer from the method named get20Numbers()
+
+MultiDimensional Array
+	# use to manage data in row and column format/tabular/matrix format.
+	# Syntax:
+		data_type array_name[][] = new data_type[rows][cols];
+
+		e.g:
+			int mat[][] = new int[2][2];
+
+		
+		inserting data in array:
+			use nested for loop
+			for(int i=0;i<array.length;i++)
+			{
+				for(int j = 0;j<array[i].length;j++)
+				{
+					array[i][j] = valueToInsert;
+				}
+			}
+
+		reading data from array
+
+		//method 1
+		for(int[] x:array)
+		{
+			for(int y:x)
+			{
+				sysout(y);
+			}
+		}
+
+		//method 2
+		for(int i=0;i<array.length;i++)
+		{
+			for(j=0;j<array[i].length;j++)
+			{
+				sysout(array[i][j])
+			}
+		}
+
+		//method 3
+		for(int[]x:array)
+		{
+			sysout(Arrays.toString(x))
+		}
+
+
+
+Methods of Arrays.
+	1. Sorting
+		Arrays.sort(arrayName);
+		sorts the array in ascending order.
+
+	2.fill
+		Arrays.fill(arrayName,value)
+		fills the entire array with the value mentioned.
+	
+	3.fill in range
+		Arrays.fill(arrayName,startIndex,endIndex,value);
+		fills the array with value in the range endIndex excluded.
+	
+	4.copy within range
+		Arrays.copyOfRange(arrayName,3,12)
+		copies the old array to new array within specified range.
+
+********************************************************************************************************************************************************
+
+
+
+
 
 
 
@@ -345,3 +431,4 @@ Array           ------> Collection of homogeneous data.
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal 
+		
