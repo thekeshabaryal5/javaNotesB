@@ -92,3 +92,6 @@ Q>  SI and Amount using following methods: ✔
 
 ********************************************************* Day 9 01/17 ****************************************************************
 Solve using multidimensional array to store the data of students as given format in image aside .09_01_17.jpg ✔
+
+*********************************************************** Day10 01/19***************************************************************
+Solve the class_object_practice.pdf questions.
