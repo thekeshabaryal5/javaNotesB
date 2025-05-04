@@ -19,6 +19,9 @@ This space is dedicated to documenting my daily progress, practice, and importan
 - **`corejava_assignment.pdf`**  
   ➡️ Assignment problems focused on Core Java topics for deeper understanding and practical application.
 
+- **`class_object_practice.pdf`**  
+  ➡️ Assignment problems related to oop concept.
+
 ## How I Use This Repo ✍️
 
 - I update **takeawaypoint.txt** every single day with new learnings.

@@ -95,3 +95,33 @@ Solve using multidimensional array to store the data of students as given format
 
 *********************************************************** Day10 01/19***************************************************************
 Solve the class_object_practice.pdf questions.
+*********************************************************** Day 11 01/21 *************************************************************
+Constructor
+    use to create an object in java.
+    special type of method which has same name as class name.
+    It has no return type.
+    If there is no any user defined constructor in class then, Java provides default constructor to create an object.
+
+Types
+    default constructor.
+        use to create object and set default values to object
+        syntax:
+            class_name()
+            {
+                //set default values to object.
+            }
+    parameterized constructor.
+        use to create object and set dynamic values to object.
+        syntax:
+            class_name(args1,args2,arg3,...................,argn)
+            {
+                //set dynamic values to object.
+            }
+
+this
+    this keyword represent current object.
+    we can call following through this:
+        instance variables, -----------> this.name = "aryal"
+        instance methods, -------------> this.displayName();
+        constructors. -----------------> this() / this("keshab",444);
+                constructor DO RETURN a value and its a object being created...
