@@ -22,6 +22,9 @@ This space is dedicated to documenting my daily progress, practice, and importan
 - **`class_object_practice.pdf`**  
   ➡️ Assignment problems related to oop concept.
 
+- **`java_oops1.pdf / java_oops1.ppts`**  
+  ➡️ Notes on java oops concept.
+
 ## How I Use This Repo ✍️
 
 - I update **takeawaypoint.txt** every single day with new learnings.
