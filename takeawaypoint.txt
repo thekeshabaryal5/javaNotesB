@@ -488,7 +488,57 @@ this
 
 
 ***************************************************************Day 12 1/22*******************************************************************
+Static Keyword:
+	Class's property.
+	Static variables are crated during class loading.
+	all the objects can alter the static variable  (generally done with the class only)
+***************************************************************** Day 13 1/23****************************************************************
+Encapsulation:
+	Data hiding and data binding process.
+	To achieve encapsulation:
+			1. Declare properties of class as private (i.e data hiding).
+			2. Create public getters and setters methods to get and set values to private properties.
 
+	Syntax
+		POJO (Plain old Java Object) or model class ------> class with private properties and public getter and setter
+		class class_name{
+			//private properties
+			//public getters and setters
+		}
+
+	Setter:
+		Use to set the values of private property of class
+		syntax:
+			public setId(int id)
+			{
+				this.id = id
+			}
+
+	Getter:
+		use to get the values of property of class
+		Syntax:
+			public int getId()
+			{
+				return this.id;
+			}
+	
+Inheritance
+	Use for code reusability
+	Process of accessing properties and methods of parent/super/base class to child/sub/derived class is known as inheritance.
+	Also known as is-a relationship.
+
+	Its a generalization to specialization process.
+	also known as value change of class.
+	extends keyword is used in inheritance.
+	private (properties/methods) and constructor are never inherited.
+	We can inherite only one class at a time
+	Multiple inheritance not exist in java with class.
+
+	Syntax:
+		childClassName extends parentClassName{
+			//properties ... = parent + child
+			//methods... = parent+child
+		}
 
 **********************************************************************************************************************************************
 																														Notes Maintained by:
