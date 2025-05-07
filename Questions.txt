@@ -95,4 +95,15 @@ Solve using multidimensional array to store the data of students as given format
 
 *********************************************************** Day10 01/19***************************************************************
 Solve the class_object_practice.pdf questions.
-*********************************************************** Day 11 01/21 *************************************************************
+*********************************************************** Day 14 01/24 *************************************************************
+/*
+ * Q> WAP to store and print data  ✔
+ *    of 10 Employees(id,name,company,salary,department,post,city):
+ *    
+ *    a> find total salary of employee.
+ *    b> print employees of IT department.
+ *    c> count employees of Admin department.
+ *    d> count and print employees of particular city.
+ *    e> calculate total salary of particular department.
+ *    f> find highest and lowest salary of employee.
+ */

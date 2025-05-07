@@ -540,6 +540,23 @@ Inheritance
 			//methods... = parent+child
 		}
 
+***************************************************************** Day 14 1/24****************************************************************
+Array of Object
+	Syntax:
+		className arrayName[] = new className[size];
+
+		int[] values = new int[400];
+		Student stds[] = new Student[200];
+		Cow cows[] = new Cow[50];
+		Product[] prods = new Product[5000];
+
+
+
+
+
+
+
+
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal 
