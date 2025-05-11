@@ -1,0 +1,301 @@
+✅ 1. Variables and Data Types
+Theoretical Questions
+
+    What is the difference between primitive and non-primitive data types in Java?
+
+    Explain type casting with examples in Java.
+
+    What is the default value of different data types in Java?
+
+    Why is Java a strongly typed language?
+
+    Can a variable name start with a digit in Java? Justify your answer.
+
+Programming Practice Questions
+
+    Declare variables of all primitive data types and print their default values.
+
+    Write a Java program to calculate the area of a rectangle using float variables.
+
+    Write a program to swap two numbers using a third variable.
+
+    Convert a double value to an integer and print both.
+
+    Take user input for name, age, and grade and display them in a formatted output.
+
+✅ 2. Operators
+Theoretical Questions
+
+    Explain the difference between == and .equals() in Java.
+
+    What are the precedence and associativity rules of Java operators?
+
+    Describe the difference between logical AND (&&) and bitwise AND (&).
+
+    What is the use of the ternary operator? Provide an example.
+
+    Explain short-circuiting in logical operators.
+
+Programming Practice Questions
+
+    Write a program to perform arithmetic operations on two numbers.
+
+    Check whether a number is even or odd using the ternary operator.
+
+    Demonstrate the use of all relational operators.
+
+    Write a program to check if a number is divisible by both 3 and 5 using logical operators.
+
+    Simulate a calculator using switch and arithmetic operators.
+
+✅ 3. Control Statements (if, if-else, switch)
+Theoretical Questions
+
+What is the difference between if-else and switch?
+
+Can switch work with String values? Since which version?
+
+Explain fall-through behavior in switch statements.
+
+What is the use of break and default in switch?
+
+What happens if you forget to include break in a switch case?
+
+Programming Practice Questions
+
+Write a program to find the largest of three numbers using if-else.
+
+Use a switch statement to print the day of the week for a given number.
+
+Check whether a number is positive, negative, or zero.
+
+Take input of a character and check whether it is a vowel or consonant.
+
+Write a menu-driven program for basic math operations using switch.
+
+✅ 4. Loops (for, while, do-while)
+Theoretical Questions
+
+Explain the difference between while and do-while loop.
+
+When should we use a for loop over a while loop?
+
+What is an infinite loop? How can you avoid it?
+
+Can we use break and continue inside loops? Explain with examples.
+
+What happens if the loop condition is never true?
+
+Programming Practice Questions
+
+Print the multiplication table of a number using for loop.
+
+Find the factorial of a number using a while loop.
+
+Display the Fibonacci series up to n terms using a loop.
+
+Write a program to check whether a number is prime.
+
+Calculate the sum of digits of a number using a do-while loop.
+
+
+✅ 5. Arrays
+Theoretical Questions
+
+What is the difference between an array and an ArrayList in Java?
+
+How do you declare and initialize a 2D array in Java?
+
+What will happen if you try to access an array element with an invalid index?
+
+How do you find the length of an array in Java?
+
+Can an array hold multiple data types in Java? Why or why not?
+
+Programming Practice Questions
+
+Write a program to find the largest element in an array.
+
+Reverse an array without using any built-in functions.
+
+Write a program to check if a given array is sorted in ascending order.
+
+Merge two arrays into one.
+
+Write a program to find the second largest element in an array.
+
+✅ 6. Strings
+Theoretical Questions
+
+What is the difference between String and StringBuilder in Java?
+
+How do you compare two strings for equality in Java?
+
+What is string immutability in Java? Why is it important?
+
+Explain the concept of string concatenation. What are the performance implications?
+
+Can a string in Java contain null values? Explain.
+
+Programming Practice Questions
+
+Write a program to count the number of vowels in a string.
+
+Check whether a string is a palindrome or not.
+
+Convert a string to uppercase and lowercase using toUpperCase() and toLowerCase() methods.
+
+Write a program to remove white spaces from a string.
+
+Write a program to replace all occurrences of a specific character in a string with another character.
+
+✅ 7. Object-Oriented Programming (OOP)
+Theoretical Questions
+
+What is encapsulation, and why is it important in Java?
+
+Explain the concept of inheritance with an example.
+
+What is polymorphism? Describe the types of polymorphism in Java.
+
+What is abstraction, and how is it implemented in Java?
+
+How does Java implement multiple inheritance, considering that it doesn’t support multiple class inheritance?
+
+Programming Practice Questions
+
+Write a program to create a Person class with properties like name and age. Add a method to display the details.
+
+Create a class Employee that inherits from Person and adds an employee ID.
+
+Write a program to demonstrate method overloading in Java.
+
+Implement a simple BankAccount class with deposit and withdraw methods.
+
+Create an abstract class Shape with methods to calculate area and perimeter. Implement it in subclasses Circle and Rectangle.
+
+✅ 8. Exception Handling
+Theoretical Questions
+
+What is the difference between checked and unchecked exceptions in Java?
+
+Explain the purpose of the finally block in exception handling.
+
+How do you create a custom exception in Java?
+
+What happens if an exception is thrown and not caught in a Java program?
+
+What is the difference between throw and throws in Java?
+
+Programming Practice Questions
+
+Write a program that handles ArithmeticException when dividing by zero.
+
+Create a method that throws a custom exception if the provided number is negative.
+
+Write a program to demonstrate how finally works, even if no exception is thrown.
+
+Handle a scenario where a file is not found using exception handling.
+
+Create a program that catches and handles multiple exceptions using a single catch block.
+
+✅ 9. Inheritance
+Theoretical Questions
+
+What is the super keyword in Java, and how is it used?
+
+Can we override a private or final method? Justify your answer.
+
+Explain the concept of constructor chaining in Java with inheritance.
+
+What is the difference between method overriding and method overloading?
+
+What happens if a subclass does not override a method from the superclass?
+
+Programming Practice Questions
+
+Write a program to demonstrate single inheritance.
+
+Create a subclass that overrides the method of its superclass.
+
+Implement a class Animal with a method sound(). Create subclasses Dog and Cat, overriding sound().
+
+Use the super keyword to call the constructor of the superclass.
+
+Demonstrate the use of super to access a method in the superclass.
+
+✅ 10. Polymorphism
+Theoretical Questions
+
+What is method overriding, and how does it relate to polymorphism in Java?
+
+How can you achieve runtime polymorphism in Java?
+
+Explain the difference between compile-time polymorphism and runtime polymorphism.
+
+What are the rules for method overriding in Java?
+
+Can a method be overridden in a final class? Why or why not?
+
+Programming Practice Questions
+
+Write a program to demonstrate method overriding in Java.
+
+Create a Shape class with a method draw(). Implement the method in subclasses Circle and Square.
+
+Write a program that demonstrates method overloading with the same method name but different parameters.
+
+Create a program to demonstrate polymorphism by using a superclass reference to refer to subclass objects.
+
+Write a program where a superclass reference variable is used to call the overridden method in a subclass.
+
+✅ 11. Abstraction
+Theoretical Questions
+
+What is the purpose of abstract classes in Java?
+
+Can an abstract class have a constructor? Explain with an example.
+
+What is the difference between an abstract class and an interface?
+
+Can you instantiate an abstract class directly? Justify your answer.
+
+How do you implement abstraction using interfaces in Java?
+
+Programming Practice Questions
+
+Create an abstract class Vehicle with an abstract method drive(). Implement it in subclasses Car and Bike.
+
+Implement an abstract class Shape with a method area() and create subclasses like Circle and Rectangle.
+
+Write a program to implement an interface Playable with a method play(). Create classes Guitar and Piano implementing this interface.
+
+Create a program to demonstrate that an abstract class cannot be instantiated directly.
+
+Implement an abstract class Animal and override the sound() method in subclasses Dog and Cat.
+
+
+✅ Interfaces
+Theoretical Questions
+
+What is an interface in Java, and how does it differ from an abstract class?
+
+Can an interface have a constructor in Java? Why or why not?
+
+How do interfaces support multiple inheritance in Java?
+
+Can an interface extend another interface? If so, what is the difference between interface inheritance and class inheritance?
+
+What are default methods in interfaces? Can they have a body? Provide an example.
+
+Programming Practice Questions
+
+Create an interface Playable with a method play(). Then implement this interface in classes Guitar and Drums.
+
+Write a program where an interface Movable is implemented by both Car and Bicycle classes, each implementing a move() method.
+
+Demonstrate how to implement multiple interfaces in a single class by creating two interfaces: Shape (with method draw()) and Colorable (with method color()), and implementing them in the Circle class.
+
+Write a program to create a Vehicle interface with a method start(). Implement this interface in Car and Bike classes.
+
+Create an interface Sound with a method makeSound(), and implement it in classes Dog and Cat to demonstrate polymorphism.
