@@ -551,8 +551,60 @@ Array of Object
 		Product[] prods = new Product[5000];
 
 
+***************************************************************** Day 15 1/25 **************************************************************
+Object with method
+	1. Object as parameter
+			void printCustomer(Customer c)
+			{
+				...................
+			}
+	2. Object as return type
+			Customer getCustomerData()
+			{
+				Customer c = new Customer();
+				.....
+				return c;
+			}
 
+Method Overriding.
+	runtime polymorphism.
+	there must be is a relationship.
+	method name,return type and list of parameters same as parent class but implementation is different in child class is known as method
+	overriding
 
+	Also known as value change of method.
+	We can n't override final method.
+
+*****************************************************Day 16 01/28 ************************************************************************
+
+Aggregation -------> has a relationship (one class has another class as its field)
+	1. Composition ---->  tightly binding (Inner class concept.)
+Realization ----> relation like interface and normal class implementing it.
+
+Abstraction:
+	Process of hiding implementation details in the program.
+	To achieve abstraction :
+		1. Abstract class
+			# Class which contains abstract methods and non-abstract methods.
+			# Syntax:
+				abstract class className{
+					//abstract methods
+						abstract int getArea(int l,int b);
+					//non abstract method
+						void sms()
+						{
+							System.out.println("Sms sent");
+						}
+				}
+			# Abstract method
+					Method which doesn't have body/implementation.
+				# Syntax:
+					Abstract returnType methodName(args);
+
+				# Every abstract class must have at least one child class and child class must override abstract methods.
+				# We can n't create object of abstract class.
+				# level of abstraction 0-100% 
+		2. Interface.
 
 
 
