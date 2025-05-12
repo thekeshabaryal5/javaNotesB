@@ -604,8 +604,36 @@ Abstraction:
 				# Every abstract class must have at least one child class and child class must override abstract methods.
 				# We can n't create object of abstract class.
 				# level of abstraction 0-100% 
-		2. Interface.
 
+
+*****************************************************Day 17 01/29 ************************************************************************
+2. Interface.
+	# Use to achieve abstraction.
+	# Same as class which contains public abstract methods and public static final (i.e. constant)
+	
+	# every interface must have at least one implementation (impl class) must override abstract methods.
+
+	# we can n't create object.
+	# 100% abstraction.
+	# multiple inheritance support in java with interface.
+
+	# Syntax :
+		interface interfaceName{
+			// fields which are static and final by default.
+
+			// methods which are public and abstract
+		}
+
+	# Marker interface
+		Interface without any abstract methods. Empty interface, e.g: Serializable interface
+	
+	# Functional Interface
+		Interface with only one abstract methods in it.
+
+	# Adapter Class
+		Those class which implements interface but function body are empty.
+			Why ?
+			So that the subclass can only override those methods required.
 
 
 

@@ -252,15 +252,17 @@ Write a program where a superclass reference variable is used to call the overri
 ✅ 11. Abstraction
 Theoretical Questions
 
-What is the purpose of abstract classes in Java?
+    What is the purpose of abstract classes in Java?
+        - Abstract classes are used for defining such methods whose implementation is likely to be override according to that class that inherit it.
+        - Also the purpose is to bind the subclass by a rule that they must be implementing.
 
-Can an abstract class have a constructor? Explain with an example.
+    Can an abstract class have a constructor? Explain with an example.
 
-What is the difference between an abstract class and an interface?
+    What is the difference between an abstract class and an interface?
 
-Can you instantiate an abstract class directly? Justify your answer.
+    Can you instantiate an abstract class directly? Justify your answer.
 
-How do you implement abstraction using interfaces in Java?
+    How do you implement abstraction using interfaces in Java?
 
 Programming Practice Questions
 
