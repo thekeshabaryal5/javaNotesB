@@ -250,47 +250,105 @@ Create a program to demonstrate polymorphism by using a superclass reference to 
 Write a program where a superclass reference variable is used to call the overridden method in a subclass.
 
 ✅ 11. Abstraction
-Theoretical Questions
+    Theoretical Questions  ✔
 
-    What is the purpose of abstract classes in Java?
-        - Abstract classes are used for defining such methods whose implementation is likely to be override according to that class that inherit it.
-        - Also the purpose is to bind the subclass by a rule that they must be implementing.
+        1.What is the purpose of abstract classes in Java?
+            - Abstract classes are used for defining such methods whose defnation(implementation) is most likely to be changed(override) according to that class that extends(inherit) it.
+            - Also the purpose is to bind the subclass by a rule that they must be (implementing)defining certain methods.
 
-    Can an abstract class have a constructor? Explain with an example.
+        2.Can an abstract class have a constructor? Explain with an example.
+            Yes, Abstract class can have constructor.Though we cann't instantiate abstract class any concrete subclass of it will invoke that constructor. 
+            Example:
+                abstract class Person
+                {
+                    int age;
+                    //defining constructor of abstract class.
+                    public Person(int age)
+                    {
+                        this.age = age;
+                    }
 
-    What is the difference between an abstract class and an interface?
+                    public abstract void giveIntro();
+                }
 
-    Can you instantiate an abstract class directly? Justify your answer.
+                public class Keshab extends Person
+                {
+                    public Keshab(int age)
+                    {
+                        super(age);
+                    }
+                    @Override
+                    public void giveIntro()
+                    {
+                        System.out.println("Hello there my name is Keshab and I am "+this.age+" years old");
+                    }
 
-    How do you implement abstraction using interfaces in Java?
+                    public static void main(String[] args)
+                    {
+                        Person p1 = new Keshab(25);
+                        p1.giveIntro();
+                    }
+                }
 
-Programming Practice Questions
+        3.What is the difference between an abstract class and an interface?
+            Abstract class and Interface, though similar in concept, have significant differences:
+            - Type: An abstract class is a special type of class, while an interface is a reference type.
+            - Abstract class can have abstract as well as concrete methods , while interfaces have abstract methods along with static(also static private),private and default methods.
+            - Fields and Methods: By default, fields in an interface are `public static final`, and methods are `public abstract`. In contrast, abstract classes have normal fields and methods unless explicitly declared abstract.
+            Example:
+            interface ExampleInterface {
+                int CONSTANT = 10; // public static final by default
+                void abstractMethod(); // public abstract by default
+            }
 
-Create an abstract class Vehicle with an abstract method drive(). Implement it in subclasses Car and Bike.
+            abstract class ExampleAbstractClass {
+                int normalField; // Normal field
+                void concreteMethod() { // Concrete method
+                    System.out.println("This is a concrete method in an abstract class.");
+                }
+                abstract void abstractMethod(); // Abstract method
+            }
+            - Constructors: Abstract classes can have constructors (invoked by the subclass object), but interfaces cannot have constructors.
+            
+        4.Can you instantiate an abstract class directly? Justify your answer.
+            No, an abstract class cannot be instantiated directly because it may contain abstract methods (methods without a body). Attempting to instantiate an abstract class would result in a compilation error since the abstract methods lack implementation.
 
-Implement an abstract class Shape with a method area() and create subclasses like Circle and Rectangle.
+        5.How do you implement abstraction using interfaces in Java?
+            In order to implement abstraction using interface in java here are the steps:
+                1. Define an Interface having some abstract methods in it.
+                2. Implement that interface in other class.
+                3. Now make a reference variable of interface and assign an object of the implementing class to it
+                    i.e
+                        InterfaceName varName = new ImplementingClassName();
+                4. Now when we call the methods via varName.<methodName> the implementation details gets hidden.
 
-Write a program to implement an interface Playable with a method play(). Create classes Guitar and Piano implementing this interface.
+    Programming Practice Questions    ✔   Find solution here: 
 
-Create a program to demonstrate that an abstract class cannot be instantiated directly.
+        1.Create an abstract class Vehicle with an abstract method drive(). Implement it in subclasses Car and Bike. ✔
 
-Implement an abstract class Animal and override the sound() method in subclasses Dog and Cat.
+        2.Implement an abstract class Shape with a method area() and create subclasses like Circle and Rectangle. ✔
+
+        3. Write a program to implement an interface Playable with a method play(). Create classes Guitar and Piano implementing this interface.✔
+
+        4. Create a program to demonstrate that an abstract class cannot be instantiated directly.✔
+
+        5.Implement an abstract class Animal and override the sound() method in subclasses Dog and Cat. ✔
 
 
 ✅ Interfaces
 Theoretical Questions
 
-What is an interface in Java, and how does it differ from an abstract class?
+    What is an interface in Java, and how does it differ from an abstract class?
 
-Can an interface have a constructor in Java? Why or why not?
+    Can an interface have a constructor in Java? Why or why not?
 
-How do interfaces support multiple inheritance in Java?
+    How do interfaces support multiple inheritance in Java?
 
-Can an interface extend another interface? If so, what is the difference between interface inheritance and class inheritance?
+    Can an interface extend another interface? If so, what is the difference between interface inheritance and class inheritance?
 
-What are default methods in interfaces? Can they have a body? Provide an example.
+    What are default methods in interfaces? Can they have a body? Provide an example.
 
-Programming Practice Questions
+Programming Practice Questions 
 
     Create an interface Playable with a method play(). Then implement this interface in classes Guitar and Drums.
 
@@ -392,3 +450,5 @@ Task:
 
     Calls initialize(), play(), and end() – all of which are abstract methods.
     Implement this template flow in FootballGame and ChessGame.
+
+Find solution here: https://github.com/keshab-aryal5/Java-Learning/tree/master/selfPractice/interfaceRevision
