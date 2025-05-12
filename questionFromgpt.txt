@@ -322,7 +322,7 @@ Write a program where a superclass reference variable is used to call the overri
                         InterfaceName varName = new ImplementingClassName();
                 4. Now when we call the methods via varName.<methodName> the implementation details gets hidden.
 
-    Programming Practice Questions    ✔   Find solution here: 
+    Programming Practice Questions    ✔   Find solution here: https://github.com/keshab-aryal5/Java-Learning/tree/master/selfPractice/AbstractionRevision
 
         1.Create an abstract class Vehicle with an abstract method drive(). Implement it in subclasses Car and Bike. ✔
 
