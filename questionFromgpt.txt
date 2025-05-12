@@ -249,7 +249,8 @@ Create a program to demonstrate polymorphism by using a superclass reference to 
 
 Write a program where a superclass reference variable is used to call the overridden method in a subclass.
 
-✅ 11. Abstraction
+
+✅ 11. Abstraction ✔
     Theoretical Questions  ✔
 
         1.What is the purpose of abstract classes in Java?
@@ -334,121 +335,121 @@ Write a program where a superclass reference variable is used to call the overri
 
         5.Implement an abstract class Animal and override the sound() method in subclasses Dog and Cat. ✔
 
+✅ Interfaces ✔
+    Theoretical Questions ✔
 
-✅ Interfaces
-Theoretical Questions
+        1.What is an interface in Java, and how does it differ from an abstract class? ✔
+            Interface is a reference type in java acting like a template which are used by implementing classes.
+            Abstract class can contain abstract and non abstract methods while Interface have abstract methods (along with default , static and private methods)
 
-    What is an interface in Java, and how does it differ from an abstract class?
+        2.Can an interface have a constructor in Java? Why or why not? ✔
+            No interface cann't have a constructor in java.
+            Why?
+                1.Interface are not class they are reference type.
+                2.Constructor is meant for initialization of instance members and interface doesn't have any
 
-    Can an interface have a constructor in Java? Why or why not?
+        3.How do interfaces support multiple inheritance in Java? ✔ 
+            Java allows multiple inheritance through interfaces because interfaces (unlike classes) typically don't carry implementation, thus avoiding ambiguity and conflict. When there's a conflict due to default methods, Java requires you to resolve it explicitly.
+        
+        4.Can an interface extend another interface? If so, what is the difference between interface inheritance and class inheritance?✔
+            Yes, interface can extend another interface
+            i.when interface extends another interface it gives new interface while class inheritance gives a class.
+            ii. Interaface can inherit from multiple interface while a class can only inherit from a single class
 
-    How do interfaces support multiple inheritance in Java?
+        5.What are default methods in interfaces? Can they have a body? Provide an example.✔
+            Default methods are those methods which have their implementation in interface itself.
+            Default methods are highly useful when the same implementation works for multiple inheriting class, so that the class implementing that methods wouldn't have to override that method again.
 
-    Can an interface extend another interface? If so, what is the difference between interface inheritance and class inheritance?
+    Programming Practice Questions ✔
+        1. Interface with Basic Abstract Method and Constant   ✔
+        Task:
+            Create an interface Animal with:
 
-    What are default methods in interfaces? Can they have a body? Provide an example.
+            A constant MAX_AGE
 
-Programming Practice Questions 
+            An abstract method makeSound()
 
-    Create an interface Playable with a method play(). Then implement this interface in classes Guitar and Drums.
+            Implement this interface in Dog and Cat classes and call the method from the main class.
 
-    Write a program where an interface Movable is implemented by both Car and Bicycle classes, each implementing a move() method.
+        2. Interface with Default Method  ✔
+        Task:
+            Create an interface Remote with a default method connect() and an abstract method powerOn().
+            Implement it in TV and override the default method in one class only.
 
-    Demonstrate how to implement multiple interfaces in a single class by creating two interfaces: Shape (with method draw()) and Colorable (with method color()), and implementing them in the Circle class.
+        3. Interface with Static Method  ✔
+        Task:
+            Create an interface MathUtility with a static method getPi() that returns 3.1415.
+            Call this method from main() without implementing the interface.
 
-    Write a program to create a Vehicle interface with a method start(). Implement this interface in Car and Bike classes.
+        4. Interface with Private Method Called by Default Method ✔
+        Task:
+            Create an interface Logger with a default method logInfo() that calls a private method getTimeStamp().
+            Implement and test in ConsoleLogger class.
 
-    Create an interface Sound with a method makeSound(), and implement it in classes Dog and Cat to demonstrate polymorphism.
+        5. Interface with Private Static Method Called by Static Method ✔
+        Task:
+            Create an interface DatabaseConfig with a static method printSettings() that internally calls a private static method loadDefaults().
+            Test it in main().
 
-1. Interface with Basic Abstract Method and Constant   ✔
-Task:
-    Create an interface Animal with:
+        6. Interface with Multiple Types of Methods ✔
+        Task:
+            Create an interface Vehicle with:
 
-    A constant MAX_AGE
+            A constant MAX_SPEED
 
-    An abstract method makeSound()
+            Abstract method drive()
 
-    Implement this interface in Dog and Cat classes and call the method from the main class.
+            Default method start()
 
-2. Interface with Default Method  ✔
-Task:
-    Create an interface Remote with a default method connect() and an abstract method powerOn().
-    Implement it in TV and override the default method in one class only.
+            Static method serviceInfo()
 
-3. Interface with Static Method  ✔
-Task:
-    Create an interface MathUtility with a static method getPi() that returns 3.1415.
-    Call this method from main() without implementing the interface.
+            Private method logStart()
 
-4. Interface with Private Method Called by Default Method ✔
-Task:
-    Create an interface Logger with a default method logInfo() that calls a private method getTimeStamp().
-    Implement and test in ConsoleLogger class.
+            Private static method loadServiceCenter()
 
-5. Interface with Private Static Method Called by Static Method ✔
-Task:
-    Create an interface DatabaseConfig with a static method printSettings() that internally calls a private static method loadDefaults().
-    Test it in main().
+            Use all of them appropriately in Car class and main().
 
-6. Interface with Multiple Types of Methods ✔
-Task:
-    Create an interface Vehicle with:
+        7. Multiple Interfaces with Conflicting Default Methods ✔
+        Task:
+            Create two interfaces Flyable and Swimmable, each with a default method move().
+            Implement both in a class Duck and resolve the conflict.
 
-    A constant MAX_SPEED
+        8. Interface Method Overloading ✔
+        Task:
+            Create an interface Printer with overloaded methods:
 
-    Abstract method drive()
+            print(String message)
 
-    Default method start()
+            print(int copies, String message)
 
-    Static method serviceInfo()
+            Implement the interface and test both versions.
 
-    Private method logStart()
+        9. Interface Field Access ✔
+        Task:
+            Create an interface Constants with multiple constants like PI, E, VERSION.
+            Access them from another class without implementing the interface.
 
-    Private static method loadServiceCenter()
+        10. Interface Chain with Default + Private Methods  ✔
+        Task:
+            Create a base interface Device with a default method start() and private method initHardware().
+            Extend it in SmartDevice, add another default method connectToWiFi() calling a new private method checkSignalStrength().
 
-    Use all of them appropriately in Car class and main().
+            Implement in Smartphone and call both defaults.
 
-7. Multiple Interfaces with Conflicting Default Methods ✔
-Task:
-    Create two interfaces Flyable and Swimmable, each with a default method move().
-    Implement both in a class Duck and resolve the conflict.
+        11. Interface with Utility Static Methods ✔
+        Task:
+            Create a Validator interface with only static and private static methods like:
 
-8. Interface Method Overloading ✔
-Task:
-    Create an interface Printer with overloaded methods:
+            isValidEmail(String email)
 
-    print(String message)
+            isValidPassword(String password)
+            Use these in main() to validate inputs.
 
-    print(int copies, String message)
+        12. Interface with Template Method Design Pattern ✔
+        Task:
+            Create an interface Game with a default startGame() method that:
 
-    Implement the interface and test both versions.
+            Calls initialize(), play(), and end() – all of which are abstract methods.
+            Implement this template flow in FootballGame and ChessGame.
 
-9. Interface Field Access ✔
-Task:
-    Create an interface Constants with multiple constants like PI, E, VERSION.
-    Access them from another class without implementing the interface.
-
-10. Interface Chain with Default + Private Methods  ✔
-Task:
-    Create a base interface Device with a default method start() and private method initHardware().
-    Extend it in SmartDevice, add another default method connectToWiFi() calling a new private method checkSignalStrength().
-
-    Implement in Smartphone and call both defaults.
-
-11. Interface with Utility Static Methods ✔
-Task:
-    Create a Validator interface with only static and private static methods like:
-
-    isValidEmail(String email)
-
-    isValidPassword(String password)
-    Use these in main() to validate inputs.
-
-12. Interface with Template Method Design Pattern ✔
-Task:
-    Create an interface Game with a default startGame() method that:
-
-    Calls initialize(), play(), and end() – all of which are abstract methods.
-    Implement this template flow in FootballGame and ChessGame.
-
-Find solution here: https://github.com/keshab-aryal5/Java-Learning/tree/master/selfPractice/interfaceRevision
+        Find solution here: https://github.com/keshab-aryal5/Java-Learning/tree/master/selfPractice/interfaceRevision
