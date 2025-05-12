@@ -613,7 +613,7 @@ Abstraction:
 	
 	# every interface must have at least one implementation (impl class) must override abstract methods.
 
-	# we can n't create object.
+	# we can n't create object of Interface
 	# 100% abstraction.
 	# multiple inheritance support in java with interface.
 
