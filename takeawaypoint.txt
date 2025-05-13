@@ -635,7 +635,23 @@ Abstraction:
 			Why ?
 			So that the subclass can only override those methods required.
 
+*****************************************************Day 18 01/30 ************************************************************************
+Collection: (Java collection / Collection Framework)
+	# Use to store and process dynamic multiple data/objects.
 
+	1. List : Dynamic Array
+		a. ArrayList         : Slow processing , better to use for data storage
+		b. LinkedList 		 : Fast processing, better to use for data processing.
+
+	2. Set  : Collection unique data
+		a. HashSet           : Unique data only.
+		b. TreeSet           : Unique + sorted
+		c. LinkedHashSet     : Unique + insertion in order.
+
+	3. Map  : Data managed in key,value pair.
+		a. HashMap           : (key,value) pair 
+		b. TreeMap			 : (K,V) pair and Sorted.
+		c. LinkedHashMap     : (K,V) pair and insertion in order
 
 **********************************************************************************************************************************************
 																														Notes Maintained by:

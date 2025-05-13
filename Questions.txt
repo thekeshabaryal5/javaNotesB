@@ -107,3 +107,20 @@ Solve the class_object_practice.pdf questions.
  *    e> calculate total salary of particular department.
  *    f> find highest and lowest salary of employee.
  */
+******************************************************************* Day 18 01/30 ************************************************
+Create list of:
+    Student
+    Book
+    Dog
+
+Create set of:
+    a. Mobile
+    b. Cow
+    c. Customer
+
+Solve following using map:
+    Subject         T1          T2          T3          Total             Remarks
+     Math           30          15          50            95                Pass
+     Computer
+     Nepali
+     Science

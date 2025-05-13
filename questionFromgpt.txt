@@ -175,80 +175,79 @@ Implement a simple BankAccount class with deposit and withdraw methods.
 Create an abstract class Shape with methods to calculate area and perimeter. Implement it in subclasses Circle and Rectangle.
 
 ✅ 8. Exception Handling
-Theoretical Questions
+    Theoretical Questions
 
-What is the difference between checked and unchecked exceptions in Java?
+        What is the difference between checked and unchecked exceptions in Java?
 
-Explain the purpose of the finally block in exception handling.
+        Explain the purpose of the finally block in exception handling.
 
-How do you create a custom exception in Java?
+        How do you create a custom exception in Java?
 
-What happens if an exception is thrown and not caught in a Java program?
+        What happens if an exception is thrown and not caught in a Java program?
 
-What is the difference between throw and throws in Java?
+        What is the difference between throw and throws in Java?
 
-Programming Practice Questions
+    Programming Practice Questions
 
-Write a program that handles ArithmeticException when dividing by zero.
+        Write a program that handles ArithmeticException when dividing by zero.
 
-Create a method that throws a custom exception if the provided number is negative.
+        Create a method that throws a custom exception if the provided number is negative.
 
-Write a program to demonstrate how finally works, even if no exception is thrown.
+        Write a program to demonstrate how finally works, even if no exception is thrown.
 
-Handle a scenario where a file is not found using exception handling.
+        Handle a scenario where a file is not found using exception handling.
 
-Create a program that catches and handles multiple exceptions using a single catch block.
+        Create a program that catches and handles multiple exceptions using a single catch block.
 
 ✅ 9. Inheritance
-Theoretical Questions
+    Theoretical Questions
 
-What is the super keyword in Java, and how is it used?
+        What is the super keyword in Java, and how is it used?
 
-Can we override a private or final method? Justify your answer.
+        Can we override a private or final method? Justify your answer.
 
-Explain the concept of constructor chaining in Java with inheritance.
+        Explain the concept of constructor chaining in Java with inheritance.
 
-What is the difference between method overriding and method overloading?
+        What is the difference between method overriding and method overloading?
 
-What happens if a subclass does not override a method from the superclass?
+        What happens if a subclass does not override a method from the superclass?
 
-Programming Practice Questions
+    Programming Practice Questions
 
-Write a program to demonstrate single inheritance.
+        Write a program to demonstrate single inheritance.
 
-Create a subclass that overrides the method of its superclass.
+        Create a subclass that overrides the method of its superclass.
 
-Implement a class Animal with a method sound(). Create subclasses Dog and Cat, overriding sound().
+        Implement a class Animal with a method sound(). Create subclasses Dog and Cat, overriding sound().
 
-Use the super keyword to call the constructor of the superclass.
+        Use the super keyword to call the constructor of the superclass.
 
-Demonstrate the use of super to access a method in the superclass.
+        Demonstrate the use of super to access a method in the superclass.
 
 ✅ 10. Polymorphism
-Theoretical Questions
+    Theoretical Questions
 
-What is method overriding, and how does it relate to polymorphism in Java?
+        What is method overriding, and how does it relate to polymorphism in Java?
 
-How can you achieve runtime polymorphism in Java?
+        How can you achieve runtime polymorphism in Java?
 
-Explain the difference between compile-time polymorphism and runtime polymorphism.
+        Explain the difference between compile-time polymorphism and runtime polymorphism.
 
-What are the rules for method overriding in Java?
+        What are the rules for method overriding in Java?
 
-Can a method be overridden in a final class? Why or why not?
+        Can a method be overridden in a final class? Why or why not?
 
-Programming Practice Questions
+    Programming Practice Questions
 
-Write a program to demonstrate method overriding in Java.
+        Write a program to demonstrate method overriding in Java.
 
-Create a Shape class with a method draw(). Implement the method in subclasses Circle and Square.
+        Create a Shape class with a method draw(). Implement the method in subclasses Circle and Square.
 
-Write a program that demonstrates method overloading with the same method name but different parameters.
+        Write a program that demonstrates method overloading with the same method name but different parameters.
 
-Create a program to demonstrate polymorphism by using a superclass reference to refer to subclass objects.
+        Create a program to demonstrate polymorphism by using a superclass reference to refer to subclass objects.
 
-Write a program where a superclass reference variable is used to call the overridden method in a subclass.
-
+        Write a program where a superclass reference variable is used to call the overridden method in a subclass.
 
 ✅ 11. Abstraction ✔
     Theoretical Questions  ✔
