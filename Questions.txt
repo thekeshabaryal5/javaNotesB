@@ -108,12 +108,12 @@ Solve the class_object_practice.pdf questions.
  *    f> find highest and lowest salary of employee.
  */
 ******************************************************************* Day 18 01/30 ************************************************
-Create list of:
+Create list of: ✔
     Student
     Book
     Dog
 
-Create set of:
+Create set of: 
     a. Mobile
     b. Cow
     c. Customer

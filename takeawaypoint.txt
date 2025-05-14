@@ -653,6 +653,16 @@ Collection: (Java collection / Collection Framework)
 		b. TreeMap			 : (K,V) pair and Sorted.
 		c. LinkedHashMap     : (K,V) pair and insertion in order
 
+
+*****************************************************Day 19 01/31 ************************************************************************
+How is project made in industry level ?
+	Have 3 base packages: 
+		com.model ----> keep those class whose data is processed (in school system student,teacher etc data is processed) (POJO classes private fields and getter/setter method)
+		com.service -----> contains interface and implementation (impl) class
+		com.view ------->  calling methods made in service (later UI)
+			if database is required add com.database
+			if controller is required add com.controller
+
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal 
