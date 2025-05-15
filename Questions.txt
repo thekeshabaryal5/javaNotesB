@@ -112,13 +112,13 @@ Create list of: ✔
     Student
     Book
     Dog
-
-Create set of: 
+ 
+Create set of:  ✔
     a. Mobile
     b. Cow
     c. Customer
 
-Solve following using map:
+Solve following using map: ✔
     Subject         T1          T2          T3          Total             Remarks
      Math           30          15          50            95                Pass
      Computer

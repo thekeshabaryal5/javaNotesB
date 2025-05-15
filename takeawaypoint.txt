@@ -663,6 +663,10 @@ How is project made in industry level ?
 			if database is required add com.database
 			if controller is required add com.controller
 
+*****************************************************Day 20 02/01 ************************************************************************
+Install MYSQL workbench
+Instal SQLyog
+
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal 
