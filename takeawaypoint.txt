@@ -667,6 +667,18 @@ How is project made in industry level ?
 Install MYSQL workbench
 Instal SQLyog
 
+
+*****************************************************Day 21 02/02 ************************************************************************
+JDBC -> Java Database connection.
+	1. Database config.
+		a. Register Driver
+		b. getConnection(url,uname,psw)
+
+	2. Transaction (R/W)
+		a. write sql
+		b. create statement / prepared statement.
+		c. execute sql
+		d. close db
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal 
