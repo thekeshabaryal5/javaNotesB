@@ -682,6 +682,23 @@ JDBC -> Java Database connection.
 
 *****************************************************Day 22 02/04 ************************************************************************
 Practiced adding items to database and manipulating them..
+
+
+*****************************************************Day 23 02/05 ************************************************************************
+Java swing
+	# use to create UI/GUI/frontend for desktop application in java.
+
+	#UI components:
+		- JFrame
+		- JPanel
+		- JButton
+		- JTextField
+		- JLabel
+		- JRadioButton
+		- JCheckBox
+		- JTable
+		- JMenu
+		- JPasswordField
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal 
