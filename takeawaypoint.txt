@@ -699,7 +699,18 @@ Java swing
 		- JTable
 		- JMenu
 		- JPasswordField
+
+*****************************************************Day 24 02/06 ************************************************************************
+Method for getting text from textfield of swing: <textFieldName>.getText();
+Method for getting an item from a combo box (drop down list): <comboBoxName>.getSelectedItem().toString();
+				for checking if any option are selected or not: <comboBoxName>.getSelectedIndex() > 0
+
+*****************************************************Day 25 02/07 ************************************************************************
+Made a UI for viewing and deleting records from db.
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal 
 		
+
+
+			
