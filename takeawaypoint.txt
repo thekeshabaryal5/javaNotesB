@@ -707,10 +707,18 @@ Method for getting an item from a combo box (drop down list): <comboBoxName>.get
 
 *****************************************************Day 25 02/07 ************************************************************************
 Made a UI for viewing and deleting records from db.
+*****************************************************Day 26 02/09 ************************************************************************
+Deleted records from table.
+*****************************************************Day 27 02/011 ************************************************************************
+Exception Handling in java.
+	compile time checked exception.
+	run time unchecked exception.
+		try
+		catch
+		throw
+		throws 
+		finally
 **********************************************************************************************************************************************
 																														Notes Maintained by:
-																														Keshab Aryal 
-		
-
-
-			
+																														Keshab Aryal
+																														
