@@ -718,6 +718,62 @@ Exception Handling in java.
 		throw
 		throws 
 		finally
+*****************************************************Day 28 02/012 ************************************************************************
+File Handling
+	a. FileInputStream   - read file
+		FileInputStream file = new FileInputStream("./src/fileHandling/newFile.txt",true) ----> First arg: path of file, second arg ---> appending into file.
+	b. FileOutputStream  - write/create file
+
+	FileReader  - read file
+	FileWriter 	- write file
+
+*****************************************************Day 29 02/014 ************************************************************************
+Multithreading
+	Small Part of process which has separate path of execution is known thread.
+
+How to create thread ?
+	a. Extending thread class
+	b. Implementing Runnable interface
+
+*****************************************************Day 31 02/020 ************************************************************************
+Advanced JAVA
+JEE/J2EE/Advanced Java
+
+
+HttpRequest (Method):
+1. GET
+	-> default request
+	-> not secure
+	-> data limit.
+	-> Use to get data from server to client.
+	-> Use to open view form.
+2. 	POST
+	-> method = "post"
+	-> secure
+	-> use to send data from client to server.
+
+Web Server
+	-> To run dynamic web application
+	-> TomCat
+
+Application Server
+	-> sms server
+	-> mail server
+	-> gmail server
+
+Java Framework for web application:
+1. Jsp, servlet
+2. EJB
+3. Strut
+4. Spring MVC
+5. Spring Boot  -----> Used in nowadays in tech company.
+
+
+Where view ?		src/main/webapp
+Where java			Java Resources/src/main/java/<make packages and do there>
+
+
+
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
