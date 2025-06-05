@@ -772,6 +772,33 @@ Java Framework for web application:
 Where view ?		src/main/webapp
 Where java			Java Resources/src/main/java/<make packages and do there>
 
+*****************************************************Day 32 02/021 ************************************************************************
+Servlet
+	# use to create dunamic web apps.
+	# Its a server side technology of java
+	# Also used in processing HTTP request.
+	
+	# Syntax:
+	
+	@WebServlet("/url-pattern)
+	class class_name extends HttpServlet{
+
+		// get request
+			void doGet(HttpServletRequest request,HttpServletResponse response)
+			{
+
+			}
+
+		//post request
+			void doPost(HttpServletRequest request,HttpServletResponse response)
+			{
+				
+			}
+
+		
+	}
+
+*****************************************************Day 33 02/022 ************************************************************************
 
 
 **********************************************************************************************************************************************
