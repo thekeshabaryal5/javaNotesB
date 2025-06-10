@@ -1,3 +1,19 @@
+Database connection 
+Class.forName("com.mysql.cj.jdbc.Driver");
+Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/college","root","root");
+
+String sql = "Insert into student (name,email,contact,gender,district,province,batch) values(?,?,?,?,?,?,?)";
+			PreparedStatement pstm = conn.prepareStatement(sql);
+			pstm.setString(1, s.getName());
+			pstm.setString(2, s.getEmail());
+			pstm.setString(3, s.getContact());
+			pstm.setString(4, s.getGender());
+			pstm.setString(5, s.getDistrict());
+			pstm.setString(6, s.getProvince()); 
+			pstm.setInt(7, s.getBatch()); 
+			
+			pstm.execute();
+
 Validating email in swing
 String email = emailTxt.getText();
 String emailRegx = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
@@ -91,3 +107,68 @@ time
 	            dateTxt.setText(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")).toString());
 	        });
 	        timer.start();
+
+
+doPost()
+
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+//		doGet(request, response);
+		
+		String un = request.getParameter("username");
+		String password = request.getParameter("password");
+		
+		if(un.equals("hari") && password.equals("123"))
+		{
+			
+			//sent data from servlet to jsp
+			request.setAttribute("uname",un);
+			request.getRequestDispatcher("profile.jsp").forward(request, response);
+		}
+		else
+		{
+			request.getRequestDispatcher("loginForm.jsp").forward(request, response);
+		}
+		
+	}
+
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+//		doGet(request, response);
+		
+		String un = request.getParameter("username");
+		String password = request.getParameter("password");
+		
+		if(un.equals("hari") && password.equals("123"))
+		{
+			
+			//sent data from servlet to jsp
+			request.setAttribute("uname",un);
+			request.getRequestDispatcher("profile.jsp").forward(request, response);
+		}
+		else
+		{
+			request.setAttribute("message","user not found");
+			request.getRequestDispatcher("loginForm.jsp").forward(request, response);
+		}
+		
+	}
+
+How to make columns of sql case sensative ? using collate utf8mb4_bin;
+ALTER TABLE USER
+MODIFY username VARCHAR(50) COLLATE utf8mb4_bin,
+MODIFY PASSWORD	VARCHAR(50) COLLATE utf8mb4_bin;
+
+
+JSTL
+<c:forEach var="u" items="${ulist}">
+<tr bgcolor="skyblue">
+<td>${u.id }</td>
+<td>${u.fname }</td>
+<td>${u.lname }</td>
+<td>${u.username }</td>
+<td>${u.password }</td>
+</tr>
+</c:forEach>
