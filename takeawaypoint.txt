@@ -855,7 +855,37 @@ POM.xml
 Maven internal Process
 Remote Repository ----------> Central Repository(mvnrepository.com) ------------------> POM.xml ------------------------> Local Repository
 							  
+*****************************************************Day 38 02/028 ************************************************************************
+									ORM (Hibernate) Framework
+Object Relational Mapping
+	Deals with DB.
+	Similar to oop. (like to use oop we use java,c++,python), i.e ORM is also a concept about configuration of db
+	ORM implementing tools hibernate , ibities, MyBatis
+	ORM - Mapping object to database
 
+
+Java Class <-------------------> Hibernate/ Data Layer / JPA <---------------> Database (Mysql)
+Use annotations
+@Entity
+@Table(name="student_tbl")
+
+
+@Column ---> to make field column of table
+@Id ----> to make field primary key
+@GeneratedValue ---> To make auto incrmentation used with @Id
+
+@Column(name="FirtName");
+private String fname
+
+Class being mapped to db called persistance class
+
+Methods:
+to add row : save()
+to delete a row: delete()
+to update a row: update()
+to list : list () 
+
+configuration file:  hibernate.cfg.xml
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
