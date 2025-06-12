@@ -813,6 +813,49 @@ Retrieving data from db.
 JSTL
 
 
+*****************************************************Day 37 02/027 ************************************************************************
+								Maven Framework/ Tool
+Benefits of using tools
+1. Faster and easier development.
+2. Uniform Environment.
+
+Why Maven ? 
+	Maven developed by Apache company
+	Dependency management tool
+	Project management tool
+
+Dependency
+	Jar files
+		- Java Programs
+	Third party jar file (Files not in jdk, not developed by java) -> JSTL , MySQL jar file
+
+We'll make maven project from now onwards
+
+When maven project is made we get POM.xml
+POM.xml
+	-> Registration of third party jar files.
+	How to register?
+	<dependencies>
+
+		<dependency>
+			<groupId>company name </groupId>
+			<artifactId> project name </artifactId>
+			<version> latest released format of that project </version>
+		</dependency>
+
+		......
+		.
+		....
+		...
+		.
+
+	</dependencies>
+
+
+Maven internal Process
+Remote Repository ----------> Central Repository(mvnrepository.com) ------------------> POM.xml ------------------------> Local Repository
+							  
+
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
