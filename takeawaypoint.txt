@@ -886,7 +886,25 @@ to update a row: update()
 to list : list () 
 
 configuration file:  hibernate.cfg.xml
+
+*****************************************************Day 39 02/029 ************************************************************************
+Making connection with hibernate
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		Session sess = sf.openSession();
+		sess.beginTransaction();
+		
+		Student s = new Student();
+		s.setFname("Kamal");
+		s.setLname("karki");
+		s.setAge(33);
+		s.setCollege("kec");
+		s.setCity("kathmandu");
+		
+		sess.save(s);
+		
+		sess.getTransaction().commit();
+		
+		sess.close();
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
-																														
