@@ -905,6 +905,14 @@ Making connection with hibernate
 		sess.getTransaction().commit();
 		
 		sess.close();
+
+*****************************************************Day 40 02/30 ************************************************************************
+										Mapping / Relationship
+1. OneToOne
+2. OneToMany
+3. ManyToMany
+
+Operations performed in respect to these 3 relations.
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
