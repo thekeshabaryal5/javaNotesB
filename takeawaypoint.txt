@@ -943,9 +943,42 @@ Spring Core
 	Group -> Company Name  (e.g: com.monsterkaley)
 	artifactId -> Project name
 	version -> version itself.
-	
+
 Whose beans to create ? 
 	Components of a system.
+
+*****************************************************Day 41 02/04 ************************************************************************
+Using annotation to create a bean 
+
+@Component(value="clz")  // ----> Equivalent of creating a bean via <bean> </bean> in xml based 
+public class College {
+	@Value("KEC")
+	private String name;
+	@Value("0152354")
+	private String phone;
+	
+	public void printCollege()
+	{
+		System.out.println("College name = "+name);
+		System.out.println("College Phone = "+phone);
+	}
+		
+}
+here the annotation @Value("KEC") is the default value of the name of college
+
+
+@configuration --> used to start spring container
+@ComponentScan(basePackages = "com.annot") --> here the componentScan is used for informing spring controller to control the classes under com.annot package
+@Autowired --> bean injection
+@Qualifier("mathTSImpl") --> explicitly assigning the bean
+@Primary ---> used to state default bean
+@Scope("singleton") // only one object/instance of a class
+@Scope("prototype") // creates different object/instance of a class based on the request
+
+
+
+
+
 
 **********************************************************************************************************************************************
 																														Notes Maintained by:

@@ -207,3 +207,18 @@ Creating bean with setter injection
 		<property name="price" value="600000"/>
 		<property name="company" value="Tesla"/>
     </bean>
+
+
+In annotation way of creating beans:
+use @Component(value="abc") // if value is not provided then id will be name of class itself
+ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class)
+College c = context.getBean("abc",College.class)
+
+alternatively we can create a bean via annotation in method level as
+	@Bean
+	public Student getStudentBean()
+	{
+		return new Student();
+	}
+
+	
