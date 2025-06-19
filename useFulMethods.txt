@@ -172,3 +172,38 @@ JSTL
 <td>${u.password }</td>
 </tr>
 </c:forEach>
+
+
+
+creating a bean ?
+Bean is simply the object of java
+how's created ? 
+	we create java object as 
+		Product pd = new Product()
+	So creating a bean
+	<bean class="com.di.Product" id="pd">
+		<constructor-arg value="8888"/>
+		<constructor-arg value="Mobile"/>
+		<constructor-arg value="90000"/>
+		<constructor-arg value="Apple"/>
+    </bean>
+
+	here the class Product have a parametrized constructor as follow:
+	Product(int id, String name, int price, String company)
+	{
+		......
+	}
+		
+	that's the reason why we are using <constructor-arg value="8888"/> to provide the value in constructor
+
+
+Calling bean / creating it through constructor injection
+	ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml")
+	Product p = (Product) context.getBean("pd");
+
+Creating bean with setter injection
+    <bean class="com.di.car" id="cr">
+		<property name="color" value="Blue"/>
+		<property name="price" value="600000"/>
+		<property name="company" value="Tesla"/>
+    </bean>

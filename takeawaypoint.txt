@@ -913,6 +913,40 @@ Making connection with hibernate
 3. ManyToMany
 
 Operations performed in respect to these 3 relations.
+
+
+*****************************************************Day 41 03/01 ************************************************************************
+Spring Framework 
+1. used to create a dynamic web application in java
+2. its a packaged framework
+3. it contains all components that required to create web application.
+
+
+1. Spring Core  core concept
+2. Spring MVC (too much xml config.) not used.
+3. Spring Boot (no xml config) used nowadays.
+
+
+Spring Core
+	1. Bean
+		-> Its Java Object which is controlled by spring container
+		
+	2. DI / IoC:  (Dependency Injection / Inversion of Control)
+		a. Constructor Injection
+		b. Setter Injection
+
+
+	Two ways of making a bean and Injecting value in it
+		a. By using xml file
+		b. By using Annotation
+	
+	Group -> Company Name  (e.g: com.monsterkaley)
+	artifactId -> Project name
+	version -> version itself.
+	
+Whose beans to create ? 
+	Components of a system.
+
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
