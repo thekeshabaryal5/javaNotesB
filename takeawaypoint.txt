@@ -976,8 +976,20 @@ here the annotation @Value("KEC") is the default value of the name of college
 @Scope("prototype") // creates different object/instance of a class based on the request
 
 
+*****************************************************Day 43 03/05 ************************************************************************
+MVC with Spring Boot
 
+Technologies available to use MVC in spring
+	Spring Boot
+	Thymeleaf / view template
+	Spring Data JPA
+	Maven
+	Log4j
+	Lombok
+	Boot strap template
 
+@Controller
+@GetMapping
 
 
 **********************************************************************************************************************************************
