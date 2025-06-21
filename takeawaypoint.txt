@@ -947,7 +947,7 @@ Spring Core
 Whose beans to create ? 
 	Components of a system.
 
-*****************************************************Day 41 02/04 ************************************************************************
+*****************************************************Day 42 02/04 ************************************************************************
 Using annotation to create a bean 
 
 @Component(value="clz")  // ----> Equivalent of creating a bean via <bean> </bean> in xml based 
