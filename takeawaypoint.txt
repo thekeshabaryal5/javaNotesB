@@ -992,6 +992,24 @@ Technologies available to use MVC in spring
 @GetMapping
 
 
+*****************************************************Day 44 03/06 ************************************************************************
+@PostMapping()
+@ModelAttribute User U, Model model
+model.addAttribute("uname",u.getUserName())
+
+*****************************************************Day 45 03/07 ************************************************************************
+We can send the data from controller to viewer via following
+@PostMapping
+public String postSignUp(@ModelAttribute User u, Model model)
+{
+	model.addAttribute("user",u);				// entire object is passed to viewing page.
+	return "Profile";
+}
+
+To take a value from a form which is not in the pojo class
+@RequestParam("gender")String gender
+*****************************************************Day 46 03/08 ************************************************************************
+
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
