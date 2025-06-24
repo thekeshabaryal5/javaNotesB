@@ -997,7 +997,7 @@ Technologies available to use MVC in spring
 @ModelAttribute User U, Model model
 model.addAttribute("uname",u.getUserName())
 
-*****************************************************Day 45 03/07 ************************************************************************
+*****************************************************Day 45 03/08 ************************************************************************
 We can send the data from controller to viewer via following
 @PostMapping
 public String postSignUp(@ModelAttribute User u, Model model)
@@ -1008,8 +1008,29 @@ public String postSignUp(@ModelAttribute User u, Model model)
 
 To take a value from a form which is not in the pojo class
 @RequestParam("gender")String gender
-*****************************************************Day 46 03/08 ************************************************************************
+*****************************************************Day 46 03/09 ************************************************************************
+SQL operations with spring boot
+how to connect db in spring boot ?
+	a. Spring Data JPA
+		-> Hibernate + Spring database API 
+	b. Database driver (mysql driver)
 
+*****************************************************Day 47 03/10 ************************************************************************
+Spring demo project
+	lombok -> Used for handling getter and setter of a class.
+
+how implement any module? 
+	1. POJO
+	2. Map to db/apply jpa
+	3. Repository. (DAO ---> Data access object)
+	4. Service.
+	5. ServiceImpl
+	6. Controller
+	7. View Design/ Form
+
+DTO --> Data transfer object.	
+
+Started a new project 
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
