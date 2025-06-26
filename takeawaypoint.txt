@@ -1031,6 +1031,20 @@ how implement any module?
 DTO --> Data transfer object.	
 
 Started a new project 
+
+
+*****************************************************Day 48 03/11 ************************************************************************
+Why lomobk?
+annotations that lombok provide:
+	@Getter
+	@Setter
+	@ToString
+	@AllArgsConstructor
+	@NoArgsConstructor
+	@Data -----> generates all (getter, setter, toString) at once
+
+*****************************************************Day 49 03/12 ************************************************************************
+
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
