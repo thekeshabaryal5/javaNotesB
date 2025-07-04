@@ -1031,7 +1031,7 @@ how implement any module?
 DTO --> Data transfer object.	
 
 Started a new project 
-
+created a User module
 
 *****************************************************Day 48 03/11 ************************************************************************
 Why lomobk?
@@ -1043,8 +1043,21 @@ annotations that lombok provide:
 	@NoArgsConstructor
 	@Data -----> generates all (getter, setter, toString) at once
 
+Created a department module
+Got started with bootstrap
+learned to create own methods in jpa (made some queries)
 *****************************************************Day 49 03/12 ************************************************************************
-
+Added DepartmentList table
+Encrypted password using md5 encryption
+performed add and update operation
+*****************************************************Day 50 03/15 ************************************************************************
+Designed pages through bootstrap
+*****************************************************Day 51 03/16 ************************************************************************
+Created a new entity Employee along with its repo , attributes and methods.
+*****************************************************Day 52 03/17 ************************************************************************
+project continuation, added edit form for department
+*****************************************************Day 53 03/18 ************************************************************************
+Implemented Gallery tab and uploaded image
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
