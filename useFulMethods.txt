@@ -301,3 +301,50 @@ public class User {
 
 Encryption technique / password encryption
 	u.setPassword(DigestUtils.md5DigestAsHex(u.getPassword().getBytes()));
+
+
+Creating a session
+	public String postLogin(@ModelAttribute User u, Model model, HttpSession session)
+	{
+		session.setAttribute("activeUser",u);
+		session.setMaxInactiveInterval(120);
+	}
+
+In order to check if the session is active or not
+	public String getGallery(HttpSession session)
+	{
+		if(session.getAttribute("activeUser" != null))
+		{
+			then give access.......
+		}
+		else
+		{
+			no access granted....
+			redirect to login
+		}
+	}
+
+Session methods:
+	session.addAttribute("activeUser",user);
+	session.addAttribute("userName",user.getUserName());
+	session.removeAttribute("userName");
+	session.invalidate();
+	session.setMaxInactiveInterval(200);
+
+Sending emails:
+	@Component
+	public class EmailUtils {
+		
+		@Autowired
+		private JavaMailSender mailSender;
+		
+		public void sendEmail(String toEmail, String subject, String message)
+		{
+			SimpleMailMessage email = new SimpleMailMessage();
+			email.setTo(toEmail);
+			email.setSubject(subject);
+			email.setText(message);
+			
+			mailSender.send(email);
+		}
+	}

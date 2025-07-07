@@ -1058,6 +1058,16 @@ Created a new entity Employee along with its repo , attributes and methods.
 project continuation, added edit form for department
 *****************************************************Day 53 03/18 ************************************************************************
 Implemented Gallery tab and uploaded image
+*****************************************************Day 54 03/20 ************************************************************************
+Session
+	-> as a global variable
+	-> Data in session are accessed all over the project
+	-> Common data placed in session.
+@Slf4j -----> for maintaining log
+
+********************************************************Day 55 03/22***********************************************************************
+Installed the package java mail sender
+implemented mail sending.
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
