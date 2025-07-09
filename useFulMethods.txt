@@ -348,3 +348,15 @@ Sending emails:
 			mailSender.send(email);
 		}
 	}
+
+
+Model and view usecase
+ModelAndView
+@GetMapping("/dept/pdf")
+	public ModelAndView getPdf()
+	{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("dList",dptService.getAllDepartments());
+		mv.setView(new DepartmentPdfView());
+		return mv;
+	}
