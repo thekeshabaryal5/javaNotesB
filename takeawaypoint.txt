@@ -1076,6 +1076,19 @@ Implemented printing data in pdf and excel
 ********************************************************Day 57 03/25 ***********************************************************************
 Web Services
 Communication between two individual systems or project or software.
+	1. SOAP (not used now a days)
+	2. REST Api
+create api in java
+
+@RestController -----> if a class is annoted with @RestController the return type of all the methods inside the class become a json.
+@RequestBody Department Dpt -----> it is used for mapping the data sent through api in the object of department. i.e a data to create an object of department is sent.
+@PathVariable("id") int id -------> it is used for extracting the id in path in id variable
+	i.e
+		if the url is /api/dpt/{id} whatever value comes in id it is stored in id variable.
+@PutMapping ----> annotation for update methods in api
+@DeleteMapping ----> annotation for delete method in api
+
+
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal

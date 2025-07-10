@@ -360,3 +360,62 @@ ModelAndView
 		mv.setView(new DepartmentPdfView());
 		return mv;
 	}
+
+
+Creating api
+package com.appsoft.springDemo.api;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.appsoft.springDemo.model.Department;
+import com.appsoft.springDemo.service.DepartmentService;
+
+@RestController
+public class DepartmentRestController {
+	
+	@Autowired
+	private DepartmentService dptService;
+		
+	@GetMapping("/api/dpt/list")
+	public List<Department> getDepartment()
+	{
+		return dptService.getAllDepartment();
+	}
+	
+	@GetMapping("/api/dpt/{id}")
+	public Department getOne(@PathVariable("id") int id)
+	{
+		return dptService.getDepartmentById(id);
+	}
+	
+	@PostMapping("/api/dpt/add")
+	public String addDepartment(@RequestBody Department dpt)
+	{
+		dptService.addDepartment(dpt);
+		return "Department Added successfully";
+	}
+	
+	@PutMapping("/api/dpt/update")
+	public String update(@RequestBody Department dpt)
+	{
+		dptService.updateDepartment(dpt);
+		return "Update Success";
+	}
+	
+	@DeleteMapping("/api/dpt/delete/{id}")
+	public String delete(@PathVariable("id") int id)
+	{
+		dptService.deleteDepartment(id);
+		return "Delete success";
+	}
+	
+}
