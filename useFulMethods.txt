@@ -259,7 +259,7 @@ import jakarta.persistence.Table;
 @Table(name="user_tbl")
 public class User {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)	
 	private int id;
 	private String fname;
 	private String lname;
@@ -419,3 +419,14 @@ public class DepartmentRestController {
 	}
 	
 }
+
+
+json to object
+	@GetMapping("/api/dpt/j2o")
+	public String jsonToObject()
+	{
+		RestTemplate temp = new RestTemplate();
+		Department dpt = temp.getForObject("http://localhost:8080/api/dpt/11", Department.class);
+		return dpt.getDptHead()+" "+dpt.getDptName()+" "+dpt.getDptPhone();
+	}
+	

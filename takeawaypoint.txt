@@ -1088,6 +1088,11 @@ create api in java
 @PutMapping ----> annotation for update methods in api
 @DeleteMapping ----> annotation for delete method in api
 
+********************************************************Day 68 03/25 ***********************************************************************
+Learned to consume api
+
+RestTemplate class is used
+getForObject method of class RestTemplate maps the json to given class type
 
 **********************************************************************************************************************************************
 																														Notes Maintained by:
