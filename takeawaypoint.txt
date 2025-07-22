@@ -1099,6 +1099,8 @@ Created a seperated pages for admin and customer welcome pages
 added a new home page
 
 ********************************************************Day 70 03/30 ***********************************************************************
+Basic info about git and github
+railway.app signed up with github account
 
 **********************************************************************************************************************************************
 																														Notes Maintained by:
