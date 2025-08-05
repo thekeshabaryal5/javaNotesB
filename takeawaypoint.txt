@@ -744,7 +744,7 @@ HttpRequest (Method):
 1. GET
 	-> default request
 	-> not secure
-	-> data limit.
+	-> data limit. (256 char at a time)
 	-> Use to get data from server to client.
 	-> Use to open view form.
 2. 	POST
@@ -774,15 +774,15 @@ Where java			Java Resources/src/main/java/<make packages and do there>
 
 *****************************************************Day 32 02/021 ************************************************************************
 Servlet
-	# use to create dunamic web apps.
+	# use to create dynamic web apps.
 	# Its a server side technology of java
 	# Also used in processing HTTP request.
 	
 	# Syntax:
 	
-	@WebServlet("/url-pattern)
+	@WebServlet("/url-"pattern")
 	class class_name extends HttpServlet{
-
+ 
 		// get request
 			void doGet(HttpServletRequest request,HttpServletResponse response)
 			{
@@ -811,7 +811,6 @@ Retrieving data from db.
 
 *****************************************************Day 36 02/026 ************************************************************************
 JSTL
-
 
 *****************************************************Day 37 02/027 ************************************************************************
 								Maven Framework/ Tool
@@ -925,7 +924,7 @@ Spring Framework
 1. Spring Core  core concept
 2. Spring MVC (too much xml config.) not used.
 3. Spring Boot (no xml config) used nowadays.
-
+ 
 
 Spring Core
 	1. Bean
@@ -1102,6 +1101,21 @@ added a new home page
 Basic info about git and github
 railway.app signed up with github account
 
+********************************************************Day 71 04/20 ***********************************************************************
+Spring security
+	a. Authentication : Who are you
+	b. Authorization : What you can access
+
+1. User configuration (Bean)
+2. request filteration (Defined Roles)(Bean)
+3. password encoded (Bean)
+
+
+Types:
+	1. Basic Security
+	2. With database
+
+To apply spring security
 **********************************************************************************************************************************************
 																														Notes Maintained by:
 																														Keshab Aryal
